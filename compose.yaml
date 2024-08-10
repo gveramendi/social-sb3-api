@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=social-sb3-api-db'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=social-sb3-api'
+    ports:
+      - '5432:5432'
